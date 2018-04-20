@@ -1,9 +1,14 @@
 //
 //  Pages.swift
 //  KindleApp
-//
-//  Created by Sujal on 7/22/17.
-//  Copyright © 2017 Mac. All rights reserved.
-//
 
 import Foundation
+class Pages{
+    let number: Int
+    let text: String
+    
+    init(number: Int, text: String) {
+        self.number = number
+        self.text = text
+    }
+}

@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0465117A1F283EA000B85E2C /* BookPagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046511791F283EA000B85E2C /* BookPagerController.swift */; };
+		0465117F1F28509000B85E2C /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465117E1F28509000B85E2C /* PageCell.swift */; };
 		048CBD411F22F2B3004CA615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048CBD401F22F2B3004CA615 /* AppDelegate.swift */; };
 		048CBD431F22F2B3004CA615 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048CBD421F22F2B3004CA615 /* ViewController.swift */; };
-		048CBD461F22F2B3004CA615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048CBD441F22F2B3004CA615 /* Main.storyboard */; };
 		048CBD481F22F2B3004CA615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048CBD471F22F2B3004CA615 /* Assets.xcassets */; };
 		048CBD4B1F22F2B3004CA615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048CBD491F22F2B3004CA615 /* LaunchScreen.storyboard */; };
+		048CBD541F22F340004CA615 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048CBD531F22F340004CA615 /* Book.swift */; };
+		048CBD561F22F499004CA615 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048CBD551F22F499004CA615 /* Pages.swift */; };
+		04AF59B31F2CBF910011C959 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF59B21F2CBF910011C959 /* FooterView.swift */; };
+		04F406531F26F83200A18103 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F406521F26F83200A18103 /* BookCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046511791F283EA000B85E2C /* BookPagerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPagerController.swift; sourceTree = "<group>"; };
+		0465117E1F28509000B85E2C /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		048CBD3D1F22F2B3004CA615 /* KindleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KindleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048CBD401F22F2B3004CA615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		048CBD421F22F2B3004CA615 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		048CBD451F22F2B3004CA615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		048CBD471F22F2B3004CA615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		048CBD4A1F22F2B3004CA615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		048CBD4C1F22F2B3004CA615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048CBD531F22F340004CA615 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		048CBD551F22F499004CA615 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
+		04AF59B21F2CBF910011C959 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		04F406521F26F83200A18103 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0465117B1F2842FC00B85E2C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				048CBD421F22F2B3004CA615 /* ViewController.swift */,
+				046511791F283EA000B85E2C /* BookPagerController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		046511801F28897800B85E2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04F406521F26F83200A18103 /* BookCell.swift */,
+				0465117E1F28509000B85E2C /* PageCell.swift */,
+				04AF59B21F2CBF910011C959 /* FooterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		048CBD341F22F2B3004CA615 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +83,24 @@
 		048CBD3F1F22F2B3004CA615 /* KindleApp */ = {
 			isa = PBXGroup;
 			children = (
+				0465117B1F2842FC00B85E2C /* Controller */,
+				048CBD521F22F32C004CA615 /* Model */,
+				046511801F28897800B85E2C /* View */,
 				048CBD401F22F2B3004CA615 /* AppDelegate.swift */,
-				048CBD421F22F2B3004CA615 /* ViewController.swift */,
-				048CBD441F22F2B3004CA615 /* Main.storyboard */,
 				048CBD471F22F2B3004CA615 /* Assets.xcassets */,
 				048CBD491F22F2B3004CA615 /* LaunchScreen.storyboard */,
 				048CBD4C1F22F2B3004CA615 /* Info.plist */,
 			);
 			path = KindleApp;
+			sourceTree = "<group>";
+		};
+		048CBD521F22F32C004CA615 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				048CBD531F22F340004CA615 /* Book.swift */,
+				048CBD551F22F499004CA615 /* Pages.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +163,6 @@
 			files = (
 				048CBD4B1F22F2B3004CA615 /* LaunchScreen.storyboard in Resources */,
 				048CBD481F22F2B3004CA615 /* Assets.xcassets in Resources */,
-				048CBD461F22F2B3004CA615 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +173,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0465117A1F283EA000B85E2C /* BookPagerController.swift in Sources */,
 				048CBD431F22F2B3004CA615 /* ViewController.swift in Sources */,
+				048CBD541F22F340004CA615 /* Book.swift in Sources */,
+				048CBD561F22F499004CA615 /* Pages.swift in Sources */,
 				048CBD411F22F2B3004CA615 /* AppDelegate.swift in Sources */,
+				04AF59B31F2CBF910011C959 /* FooterView.swift in Sources */,
+				04F406531F26F83200A18103 /* BookCell.swift in Sources */,
+				0465117F1F28509000B85E2C /* PageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		048CBD441F22F2B3004CA615 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				048CBD451F22F2B3004CA615 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		048CBD491F22F2B3004CA615 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -269,10 +305,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2LVA8QJKSB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KindleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.mycalc.9763.lecture.KindleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = myApp.lecture.KindleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -283,10 +320,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2LVA8QJKSB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KindleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.mycalc.9763.lecture.KindleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = myApp.lecture.KindleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,6 +350,7 @@
 				048CBD511F22F2B3004CA615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
